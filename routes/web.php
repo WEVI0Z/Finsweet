@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/login', [UsersController::class, "showLogin"]);
-Route::get('/register', [UsersController::class, "showRegister"]);
-Route::get('/', [PostsController::class, "showMain"]);
-Route::get('/post/{id}', [PostsController::class, "showInfo"]);
+Route::get('/login', [UsersController::class, "showLogin"])->name("login-page");
+Route::get('/register', [UsersController::class, "showRegister"])->name("register-page");
+Route::get('/', [PostsController::class, "showMain"])->name("main-page");
+Route::get('/post/{id}', [PostsController::class, "showInfo"])->name("info-page");

@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+
+    background-color: #232536;
+}
+
+.header__content {
+    min-height: 80px;
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__link {
+    color: white;
+}
+
+.header__title {
+    margin: 0;
+    padding: 0;
+}
+
+.header__resources {
+    padding: 0;
+    display: flex;
+
+    list-style-type: none;
+}
+
+.header__resource {
+    margin-right: 15px;
+}
+
+.header__button {
+    padding: 16px 48px;
+    background-color: #fff;
+}
