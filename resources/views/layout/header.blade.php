@@ -1,10 +1,8 @@
 <header class="header">
-    <div class="header__content">
-        <nav class="header__navigation">
-            <a href="{{route("main-page")}}" class="header__link">
-                <h1 class="header__title">{Finsweet</h1>
-            </a>
-        </nav>
+    <nav class="header__content">
+        <a href="{{route("main-page")}}" class="header__link">
+            <h1 class="header__title">{Finsweet</h1>
+        </a>
         <ul class="header__resources">
             <li class="header__resource"><a href="{{route("main-page")}}" class="header__link">Home</a></li>
             <li class="header__resource"><a href="#" class="header__link">Blog</a></li>
@@ -19,5 +17,5 @@
                 <a href="{{route("register-page")}}" class="header__button">Register</a>
             </li>
         </ul>
-    </div>
+    </nav>
 </header>

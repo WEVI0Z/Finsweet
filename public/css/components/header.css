@@ -1,12 +1,11 @@
 .header {
     width: 100%;
-
     background-color: #232536;
 }
 
 .header__content {
     min-height: 80px;
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -14,6 +13,10 @@
 }
 
 .header__link {
+    display: block;
+    max-width: 800px;
+    flex-grow: 1;
+
     color: white;
 }
 
@@ -25,6 +28,8 @@
 .header__resources {
     padding: 0;
     display: flex;
+    flex-shrink: 1; 
+    flex-wrap: wrap;   
 
     list-style-type: none;
 }
@@ -48,10 +53,12 @@
 
 .header__options {
     display: flex;
+    flex-wrap: wrap; 
 
     list-style-type: none;
 }
 
 .header__option {
+    margin: 20px;
     margin-left: 20px;
 }
