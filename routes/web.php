@@ -23,3 +23,4 @@ Route::get('/login', [UsersController::class, "showLogin"])->name("login-page");
 Route::get('/register', [UsersController::class, "showRegister"])->name("register-page");
 Route::get('/', [PostsController::class, "showMain"])->name("main-page");
 Route::get('/post/{id}', [PostsController::class, "showInfo"])->name("info-page");
+Route::get('/create', [PostsController::class, "showCreation"])->name("creation-page");

@@ -9,7 +9,7 @@ class PostsController extends Controller
     function showMain() {
         $title = "Finsweet";
         $posts = [1, 2, 3, 4, 5, 6];
-    
+
         return view("posts.list", compact("title", "posts"));
     }
 
@@ -17,5 +17,11 @@ class PostsController extends Controller
         $title = "Post name";
 
         return view("posts.info", compact("title"));
+    }
+
+    function showCreation() {
+        $title = "Create post";
+
+        return view("posts.creation", compact("title"));
     }
 }

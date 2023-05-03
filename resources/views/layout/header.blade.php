@@ -16,6 +16,9 @@
             <li class="header__option">
                 <a href="{{route("register-page")}}" class="header__button">Register</a>
             </li>
+            <li class="header__option">
+                <a href="{{route("creation-page")}}" class="header__button">Create</a>
+            </li>
         </ul>
     </nav>
 </header>
