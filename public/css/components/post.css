@@ -1,0 +1,40 @@
+.post {
+    display: flex;
+}
+
+.post__right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 33px;
+}
+
+.post__category {
+    margin: 0;
+
+    text-transform: uppercase;
+    
+    color: #592EA9;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+
+.post__title {
+    margin: 20px 0px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.post__description {
+    margin: 0;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}

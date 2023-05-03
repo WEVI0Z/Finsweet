@@ -31,9 +31,17 @@
 
 .header__resource {
     margin-right: 15px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .header__button {
     padding: 16px 48px;
     background-color: #fff;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
 }
