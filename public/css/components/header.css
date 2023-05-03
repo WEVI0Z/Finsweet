@@ -45,3 +45,13 @@
     font-size: 18px;
     line-height: 24px;
 }
+
+.header__options {
+    display: flex;
+
+    list-style-type: none;
+}
+
+.header__option {
+    margin-left: 20px;
+}
