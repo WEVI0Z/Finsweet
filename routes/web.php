@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PostsController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/login', [UsersController::class, "showLogin"]);
+Route::get('/register', [UsersController::class, "showRegister"]);
+Route::get('/', [PostsController::class, "showMain"]);
+Route::get('/post/{id}', [PostsController::class, "showInfo"]);
