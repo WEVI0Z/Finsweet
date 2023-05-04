@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->integer("post_id");
             $table->text("text");
-            $table->integer("order");
             $table->timestamps();
         });
     }

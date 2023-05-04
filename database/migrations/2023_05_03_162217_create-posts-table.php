@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer("user_id");
             $table->integer("likes")->default(0);
             $table->text("title");
+            $table->text("image");
             $table->timestamps();
         });
     }

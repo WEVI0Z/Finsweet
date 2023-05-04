@@ -24,3 +24,5 @@ Route::get('/create', [PostsController::class, "showCreation"])->name("creation-
 Route::post('/login', [UsersController::class, "login"])->name("login");
 Route::post('/register', [UsersController::class, "register"])->name("register");
 Route::get('/logout', [UsersController::class, "logout"])->name("logout");
+
+Route::post("create", [PostsController::class, "create"])->name("create");
