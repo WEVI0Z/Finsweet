@@ -43,7 +43,9 @@ class UsersController extends Controller
             "password.confirmed" => "Password not confirmed",
         ];
 
-        Validator::make($request->all(), $rules, $messages);
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        $validator->validate();
 
         $user = User::create([
             "name" => $request->login,

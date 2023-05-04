@@ -47,7 +47,7 @@ class PostsController extends Controller
 
         $messages = [
             "paragraph.*.required" => "All paragraphs must contain text",
-            "image.required" => "Not all files selected",
+            "image.required" => "Picture is not selected",
             "image.mimes" => "Images must be jpg, jpeg or png",
             "image.max" => "Image is too big",
             "title.required" => "Title is required",
@@ -56,9 +56,7 @@ class PostsController extends Controller
 
         $validator = Validator::make($request->all(), $rules, $messages);
 
-        if($validator->fails()) {
-            return redirect()->back();
-        }
+        $validator->validate();
 
         $photo = $request->file("image")->store("public");
 

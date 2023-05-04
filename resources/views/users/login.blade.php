@@ -3,6 +3,11 @@
 @section("content")
     <form class="form form--login" action="{{route("login")}}" method="post">
         @csrf
+        @if (session("error"))
+            <p class="form__messages">
+                {{session("error")}}
+            </p>
+        @endif
         <label for="login" class="form__label">
             Login:
             <input type="text" name="login" id="login" class="form__input" placeholder="username123...">

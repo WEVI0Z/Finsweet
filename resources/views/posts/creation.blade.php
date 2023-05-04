@@ -3,6 +3,11 @@
 @section("content")
     <form class="form create" action="{{route("create")}}" method="post" enctype="multipart/form-data">
         @csrf
+        <p class="form__messages">
+            @foreach($errors->all() as $error)
+                {{$error}}<br>
+            @endforeach
+        </p>
         <ul class="form__list">
             <li class="form__item">
                 <label for="title" class="create__label form__label">
