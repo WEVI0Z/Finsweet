@@ -1,7 +1,7 @@
 @extends("layout.main")
 
 @section("content")
-    <form class="form form--login" action="" method="post">
+    <form class="form form--login" action="{{route("login")}}" method="post">
         @csrf
         <label for="login" class="form__label">
             Login:
