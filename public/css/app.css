@@ -1,0 +1,6 @@
+@import "./base/global.css";
+@import "./components/header.css";
+@import "./components/posts.css";
+@import "./components/post.css";
+@import "./components/form.css";
+@import "./components/info.css";
